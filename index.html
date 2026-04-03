@@ -15,22 +15,17 @@
   <header class="site-header" id="site-header">
     <div class="container">
       <nav class="nav">
+        <!-- Logo (right in RTL) -->
         <a href="index.html" class="nav__logo">
-          <span class="nav__logo-mark">HK</span>
-          <div class="nav__logo-text">
-            <span>קבוצת חזות קריספין</span>
-            <span>ייעוץ עסקי ופיננסי</span>
-          </div>
+          <span class="nav__logo-hk">HK</span>
+          <span class="nav__logo-text">חזות קריספין</span>
         </a>
 
+        <!-- Links (left in RTL) -->
         <ul class="nav__links" id="nav-links">
-          <li><a href="index.html" class="active">ראשי</a></li>
-          <li><a href="strategic-business-consulting.html">ייעוץ עסקי</a></li>
-          <li><a href="hybrid-economic-flow-management.html">ניהול תזרים</a></li>
-          <li><a href="personal-financial-management.html">ניהול פיננסי אישי</a></li>
-          <li><a href="#about">אודות</a></li>
-          <li><a href="#contact">צור קשר</a></li>
-          <li class="nav__cta"><a href="meeting.html" class="btn btn--primary">קביעת פגישה</a></li>
+          <li><a href="index.html" class="active">בית</a></li>
+          <li><a href="#products">מוצרים</a></li>
+          <li><a href="meeting.html" class="btn btn--salmon" style="padding:8px 22px;font-size:.9rem;">קביעת פגישה</a></li>
         </ul>
 
         <button class="nav__toggle" id="nav-toggle" aria-label="תפריט">
@@ -41,329 +36,221 @@
   </header>
 
   <!-- ── Hero ── -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero__grid">
-        <div class="hero__content">
-          <p class="hero__eyebrow">HK קבוצת חזות קריספין</p>
-          <h1 class="hero__title">
-            כל הכלים<br/>
-            להצלחת <span>העסק שלך</span><br/>
-            במקום אחד
-          </h1>
-          <p class="hero__body">
-            כל עסק הוא ייחודי, ולכל לקוח יש צרכים ואתגרים שונים.
-            לכן, אנו מציעים פתרונות מותאמים אישית שמתמקדים בצמיחה, יעילות, ושיפור מתמיד.
-          </p>
-          <div class="hero__actions">
-            <a href="meeting.html" class="btn btn--primary">קביעת פגישה ראשונית</a>
-            <a href="#services" class="btn btn--outline">השירותים שלנו</a>
-          </div>
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="container" style="position:relative;z-index:2;width:100%;">
+      <div class="hero__content">
+        <div class="hero__logo-big">
+          <span class="hero__name">קבוצת</span>
+          <span class="hero__hk">HK</span>
+        </div>
+        <div class="hero__name" style="font-size:clamp(1.8rem,3.5vw,3rem);margin-bottom:16px;">חזות קריספין</div>
+        <p class="hero__sub">כל הכלים להצלחת<br/>העסק שלך במקום אחד</p>
+        <a href="#contact" class="btn btn--salmon">אני רוצה להצליח</a>
+      </div>
+    </div>
+  </section>
 
-          <div class="hero__stats">
-            <div>
-              <div class="hero__stat-num">10+</div>
-              <div class="hero__stat-label">שנות ניסיון</div>
-            </div>
-            <div>
-              <div class="hero__stat-num">500+</div>
-              <div class="hero__stat-label">לקוחות מרוצים</div>
-            </div>
-            <div>
-              <div class="hero__stat-num">3</div>
-              <div class="hero__stat-label">תחומי מומחיות</div>
-            </div>
-          </div>
+  <!-- ── השיטה שלנו ── -->
+  <section class="section" id="method">
+    <div class="container">
+      <div class="method__intro">
+        <span class="section-tag">הגישה שלנו</span>
+        <h2 class="section-title">השיטה שלנו</h2>
+        <p class="section-desc">
+          השיטה שלנו נבנתה מתוך הבנה שכל עסק הוא ייחודי, ולכל לקוח יש צרכים ואתגרים שונים.
+          לכן, אנו מציעים פתרונות מותאמים אישית שמתמקדים בצמיחה, יעילות, ושיפור מתמיד.
+        </p>
+        <a href="#contact" class="btn btn--salmon">אני רוצה להצליח</a>
+      </div>
+
+      <div class="method__steps">
+        <div class="method-step">
+          <div class="method-step__num">1</div>
+          <h3 class="method-step__title">הבנת המצב הנוכחי</h3>
+          <p class="method-step__text">
+            תחילת התהליך שלנו מבוססת על ניתוח מעמיק של מצבו הנוכחי של העסק.
+            אנו מבצעים סקירה יסודית של כל תחומי הפעילות – מהמבנה הארגוני ועד לפעילות הפיננסית,
+            במטרה להבין לעומק את נקודות החוזק והאתגרים שעומדים בפניו.
+          </p>
         </div>
 
-        <div class="hero__visual">
-          <div class="hero__card-stack">
-            <div class="hero__card hero__card--back2">
-              <div class="hero__card-icon">💰</div>
-              <div class="hero__card-title">ניהול תזרים</div>
-              <div class="hero__card-text">שליטה מלאה בתזרים המזומנים</div>
-            </div>
-            <div class="hero__card hero__card--back1">
-              <div class="hero__card-icon">📊</div>
-              <div class="hero__card-title">ניהול פיננסי</div>
-              <div class="hero__card-text">תכנון פיננסי אישי ועסקי</div>
-            </div>
-            <div class="hero__card hero__card--main">
-              <div class="hero__card-icon">🎯</div>
-              <div class="hero__card-title">ייעוץ עסקי אסטרטגי</div>
-              <div class="hero__card-text">פתרון אסטרטגי מלא – דיוק, מיקוד וייחודיות עסקית, שיווק, ניהול כספים ומכירות לייעול וצמיחה עסקית.</div>
-            </div>
-          </div>
+        <div class="method-step">
+          <div class="method-step__num">2</div>
+          <h3 class="method-step__title">יישום וביצוע</h3>
+          <p class="method-step__text">
+            אנו מאמינים שייעוץ עסקי לא מסתיים בתכנון, אלא מתחיל ביישום.
+            הצוות שלנו מלווה את הלקוחות בתהליך היישום, תוך מעקב אחר ההתקדמות
+            וביצוע התאמות בזמן אמת בהתאם לצרכים ולתנאי השוק המשתנים.
+          </p>
+        </div>
+
+        <div class="method-step">
+          <div class="method-step__num">3</div>
+          <h3 class="method-step__title">מעקב ושיפור מתמיד</h3>
+          <p class="method-step__text">
+            שיטת העבודה שלנו מתבססת על חתירה לשיפור מתמיד. אנו מבצעים מעקב שוטף
+            אחר הביצועים של העסק, מודדים את ההצלחה בהתאם ליעדים שנקבעו, וממשיכים
+            לייעץ ולהציע שיפורים על מנת להבטיח שהעסק נשאר בקו צמיחה מתמיד.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Services ── -->
-  <section class="section section--alt" id="services">
+  <!-- ── הצוות ── -->
+  <section class="section section--alt">
     <div class="container">
-      <span class="tag">השירותים שלנו</span>
-      <h2 class="section-title">פתרונות מותאמים לכל עסק</h2>
-      <div class="divider"></div>
-      <p class="section-subtitle">
-        אנחנו מלווים עסקים בכל שלבי הדרך – מאסטרטגיה ועד יישום, עם מעקב ותוצאות בזמן אמת.
-      </p>
-
-      <div class="services__grid">
-        <div class="service-card">
-          <div class="service-card__icon">🎯</div>
-          <h3 class="service-card__title">ייעוץ עסקי אסטרטגי</h3>
-          <p class="service-card__desc">
-            פתרון אסטרטגי מלא הכולל דיוק, מיקוד וייחודיות עסקית. שיווק, ניהול כספים ומכירות לייעול וצמיחה עסקית מתמשכת.
-          </p>
-          <a href="strategic-business-consulting.html" class="service-card__link">
-            קרא עוד ←
-          </a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card__icon">📈</div>
-          <h3 class="service-card__title">ניהול תזרים כלכלי היברידי</h3>
-          <p class="service-card__desc">
-            ניהול תזרים מזומנים, בניית תקציבים ותוכניות עסקיות, התנהלות מול בנקים וחברות אשראי – שליטה מלאה בבריאות הפיננסית של העסק.
-          </p>
-          <a href="hybrid-economic-flow-management.html" class="service-card__link">
-            קרא עוד ←
-          </a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card__icon">💼</div>
-          <h3 class="service-card__title">ניהול פיננסי אישי</h3>
-          <p class="service-card__desc">
-            תכנון פיננסי אישי מקיף – חיסכון, השקעות, ניהול חובות ותכנון עתידי. ליווי אישי לבניית יציבות כלכלית לטווח ארוך.
-          </p>
-          <a href="personal-financial-management.html" class="service-card__link">
-            קרא עוד ←
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── About ── -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="about__grid">
-        <div>
-          <span class="tag">אודות הקבוצה</span>
-          <h2 class="section-title">ייעוץ שמתחיל ביישום, לא בתכנון</h2>
-          <div class="divider"></div>
-          <p class="section-subtitle">
-            הקבוצה מאמינה כי ייעוץ עסקי לא מסתיים בתכנון, אלא מתחיל ביישום.
-            הצוות מלווה את הלקוחות בתהליך היישום, תוך מעקב אחר ההתקדמות וביצוע התאמות בזמן אמת.
-          </p>
-
-          <div class="about__features">
-            <div class="about__feature">
-              <div class="about__feature-icon">🔍</div>
-              <div>
-                <div class="about__feature-title">אבחון מעמיק</div>
-                <div class="about__feature-text">ניתוח מקיף של המצב הנוכחי, זיהוי חוזקות, חולשות והזדמנויות לצמיחה.</div>
-              </div>
-            </div>
-            <div class="about__feature">
-              <div class="about__feature-icon">📋</div>
-              <div>
-                <div class="about__feature-title">תכנית עבודה מותאמת</div>
-                <div class="about__feature-text">בניית תכנית אסטרטגית ממוקדת עם יעדים ברורים ולוחות זמנים ריאליים.</div>
-              </div>
-            </div>
-            <div class="about__feature">
-              <div class="about__feature-icon">🚀</div>
-              <div>
-                <div class="about__feature-title">ליווי ביישום</div>
-                <div class="about__feature-text">אנחנו לא עוזבים אחרי התכנון – מלווים אתכם בכל שלב עד להשגת התוצאות.</div>
-              </div>
-            </div>
-            <div class="about__feature">
-              <div class="about__feature-icon">📊</div>
-              <div>
-                <div class="about__feature-title">מדידה ושיפור מתמיד</div>
-                <div class="about__feature-text">מעקב שוטף אחר תוצאות, התאמות בזמן אמת ועדכון האסטרטגיה לפי הצורך.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about__visual">
-          <div class="about__badge">
-            <span class="about__badge-num">10+</span>
-            <span class="about__badge-text">שנות ניסיון</span>
-          </div>
-          <div class="about__photo-wrap">
-            <div class="about__names">
-              <div class="about__person">
-                <div class="about__person-name">אייל חזות</div>
-                <div class="about__person-role">מייסד ומנכ"ל | מומחה ניהול עסקי ופיננסי</div>
-              </div>
-              <div class="about__person">
-                <div class="about__person-name">אופיר קריספין</div>
-                <div class="about__person-role">שותף מנהל | רואה חשבון מוסמך (C.P.A), לשעבר CFO</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Team ── -->
-  <section class="section section--dark">
-    <div class="container">
-      <span class="tag">הצוות המוביל</span>
-      <h2 class="section-title">מומחים עם ניסיון מוכח</h2>
-      <div class="divider"></div>
+      <span class="section-tag">הצוות המוביל</span>
+      <h2 class="section-title">מי אנחנו?</h2>
 
       <div class="team__grid">
+        <!-- אייל חזות -->
         <div class="team-card">
           <div class="team-card__avatar">א</div>
           <div class="team-card__name">אייל חזות</div>
-          <div class="team-card__role">מייסד ומנכ"ל</div>
+          <div class="team-card__role">יזם ומומחה ייעוץ עסקי</div>
           <p class="team-card__bio">
-            מייסד ובעלים של BiziBox – ממשק לניהול פיננסי המשרת עשרות אלפי עסקים בישראל.
-            הוביל את חברת הייעוץ IFACT. מביא ניסיון עשיר בניהול עסקים, שיווק, מכירות ופיתוח אסטרטגי.
+            יזם ומומחה בעל שם בתחום הייעוץ העסקי, עם ניסיון עשיר בהובלת תהליכים
+            אסטרטגיים וניהוליים בחברות בכל סדר גודל. אייל הוא המייסד והבעלים של
+            BiziBox, ממשק לניהול פיננסי המשרת עשרות אלפי עסקים בישראל, וכן הוביל
+            את חברת הייעוץ המצליחה IFACT.
           </p>
+          <p class="team-card__bio">
+            יחד, אנו בונים אסטרטגיות חכמות ומותאמות אישית שמובילות להצלחה עסקית
+            בת קיימא, תוך ליווי צמוד ושיתוף פעולה עם לקוחותינו לכל אורך הדרך.
+            בין אם מדובר בעסקים קטנים או חברות גדולות, הצוות שלנו כאן כדי לעזור.
+          </p>
+          <blockquote class="team-card__quote">
+            "אני מאמין שבכל עסק מסתתר סיפור ייחודי, ולא רק מספרים. מטרתי היא לספק לכל עסק
+            פתרון מקיף – משלב האסטרטגיה והתכנון ועד היישום בפועל. מספרים הם לא רק נתונים –
+            הם הסיפור האמיתי של העסק!"
+          </blockquote>
         </div>
 
+        <!-- אופיר קריספין -->
         <div class="team-card">
           <div class="team-card__avatar">א</div>
           <div class="team-card__name">אופיר קריספין</div>
-          <div class="team-card__role">שותף מנהל | C.P.A</div>
+          <div class="team-card__role">רואה חשבון מוסמך (C.P.A) | לשעבר CFO</div>
           <p class="team-card__bio">
-            רואה חשבון מוסמך (C.P.A) ובעל תואר שני בחשבונאות וכלכלה. למעלה מ-10 שנות ניסיון כסמנכ"ל כספים (CFO)
-            בחברות מובילות. מתמחה בניהול תזרימי מזומנים, בניית תקציבים ותוכניות עסקיות, והתנהלות מול בנקים וחברות אשראי.
+            רואה חשבון מוסמך (C.P.A) ובעל תואר שני בחשבונאות וכלכלה, עם למעלה מ-10
+            שנות ניסיון בניהול כספים בחברות מובילות. כיהן כסמנכ"ל כספים (CFO) במספר
+            חברות גדולות ומגוונות במשק, מביא עמו ניסיון עשיר בניהול פיננסי ובפיתוח
+            אסטרטגיות כלכליות. אופיר בעל נסיון רב בניהול תזרימי מזומנים, בניית תקציבים
+            ותוכניות עסקיות המותאמים לצרכי העסק, התנהלות מול בנקים וחברות אשראי.
           </p>
+          <blockquote class="team-card__quote">
+            "כרואה חשבון עם ניסיון במגוון חברות ותחומים אני מתמחה בליווי עסקים בגדלים שונים.
+            מטרתי היא לא רק לנהל את הכספים, אלא להוביל את העסק להצלחה פיננסית מתמשכת.
+            מספרים זה לא רק נתונים – זה הסיפור האמיתי של העסק!"
+          </blockquote>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Process ── -->
+  <!-- ── על הקבוצה ── -->
+  <section class="section section--navy">
+    <div class="container">
+      <div class="about__text">
+        <span class="section-tag">על הקבוצה</span>
+        <h2 class="section-title">חזות קריספין</h2>
+        <p class="section-desc" style="margin:0 auto;">
+          חזות קריספין הוא משרד ייעוץ מתקדם בהובלתם של אייל חזות ואופיר קריספין,
+          שני מומחים בעלי ניסיון עשיר ומעמיק בניהול וייעוץ עסקי, המציעים מגוון שירותים
+          מותאמים אישית לעסקים בכל גודל.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── המוצרים שלנו ── -->
+  <section class="section section--navy" id="products">
+    <div class="container">
+      <span class="section-tag">מה אנחנו מציעים</span>
+      <h2 class="section-title">המוצרים שלנו</h2>
+
+      <div class="products__grid">
+        <div class="product-card">
+          <div class="product-card__icon">💰</div>
+          <h3 class="product-card__title">HK-Money</h3>
+          <p class="product-card__desc">
+            שילוב מנצח של מנהל כספים מקצועי ומערכת מהפכנית מבוססת AI לניהול שוטף,
+            אמין, מקצועי ובטוח של התזרים בעסק.
+          </p>
+          <a href="hybrid-economic-flow-management.html" class="product-card__link">ספרו לי עוד</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__icon">🎯</div>
+          <h3 class="product-card__title">ייעוץ עסקי אסטרטגי</h3>
+          <p class="product-card__desc">
+            פתרון אסטרטגי מלא הכולל דיוק, מיקוד וייחודיות עסקית, סידור תהליכי העבודה,
+            שיווק, ניהול כספים ומכירות לייעול וצמיחה עסקית.
+          </p>
+          <a href="strategic-business-consulting.html" class="product-card__link">ספרו לי עוד</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── המלצות ── -->
   <section class="section section--alt">
     <div class="container">
-      <span class="tag">תהליך העבודה</span>
-      <h2 class="section-title">איך אנחנו עובדים?</h2>
-      <div class="divider"></div>
+      <span class="section-tag">מה אומרים עלינו</span>
+      <h2 class="section-title">לקוחות ממליצים</h2>
 
-      <div class="process__steps">
-        <div class="process__step">
-          <div class="process__step-num">1</div>
-          <div class="process__step-title">פגישת היכרות</div>
-          <div class="process__step-text">הכרת העסק, המטרות, האתגרים וציפיות הלקוח</div>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">2</div>
-          <div class="process__step-title">אבחון מעמיק</div>
-          <div class="process__step-text">ניתוח פיננסי ועסקי מקיף של המצב הקיים</div>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">3</div>
-          <div class="process__step-title">בניית תכנית</div>
-          <div class="process__step-text">פיתוח תכנית אסטרטגית מותאמת עם יעדים ברורים</div>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">4</div>
-          <div class="process__step-title">יישום וליווי</div>
-          <div class="process__step-text">מעקב שוטף, התאמות, ומדידת תוצאות בזמן אמת</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CTA Banner ── -->
-  <section class="cta-banner">
-    <div class="container">
-      <div class="cta-banner__inner">
-        <div>
-          <h2 class="cta-banner__title">מוכנים להתחיל את הדרך להצלחה?</h2>
-          <p class="cta-banner__sub">קבעו פגישת ייעוץ ראשונית ללא עלות והתחילו לבנות את העסק שתמיד חלמתם</p>
-        </div>
-        <a href="meeting.html" class="btn btn--dark">קביעת פגישה עכשיו</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Contact ── -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="contact__grid">
-        <div>
-          <span class="tag">צור קשר</span>
-          <h2 class="section-title">נשמח לשמוע ממך</h2>
-          <div class="divider"></div>
-          <p class="section-subtitle">
-            השאירו פרטים ונחזור אליכם בהקדם, או קבעו פגישה ישירות ביומן שלנו.
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">
+            עם אתגר אדיר של גדילה עסקית מחנות אחת לרשת בפריסה ארצית חיפשתי מלווה עסקי בעל נסיון מוכח,
+            בעזרת הליווי הצמוד של אופיר הבנתי איך לנהל את הצמיחה הפיננסית על הצד הטוב ביותר.
           </p>
+          <div class="testimonial-card__name">עמית אגיב</div>
+          <div class="testimonial-card__company">מיתוקית – רשת חנויות פרחים ומארזים</div>
+        </div>
 
-          <div class="contact__items">
-            <div class="contact__item">
-              <div class="contact__item-icon">📞</div>
-              <div>
-                <div class="contact__item-label">טלפון</div>
-                <a class="contact__item-value" href="tel:+972559647897">055-964-7897</a>
-              </div>
-            </div>
-            <div class="contact__item">
-              <div class="contact__item-icon">🌐</div>
-              <div>
-                <div class="contact__item-label">אתר</div>
-                <div class="contact__item-value">hak.co.il</div>
-              </div>
-            </div>
-            <div class="contact__item">
-              <div class="contact__item-icon">📍</div>
-              <div>
-                <div class="contact__item-label">מיקום</div>
-                <div class="contact__item-value">ישראל</div>
-              </div>
-            </div>
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">
+            בעסק כל כך תנודתי של הפקות הארועים, HK בליווי צמוד של אופיר הפכו את ניהול התקציב
+            החודשי שלי מאתגר למנוף עסקי.
+          </p>
+          <div class="testimonial-card__name">פנינה סאקס</div>
+          <div class="testimonial-card__company">ראש חוצות בע"מ – עסק להפקת ארועים</div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">
+            לפני שהכרתי את HK ואת אופיר לא הבנתי לאן הולך הכסף. עכשיו, אחריי שהתחלתי
+            לנהל תזרים מזומנים אני מבין היכן הכסף שלי.
+          </p>
+          <div class="testimonial-card__name">מיקי ברקוביץ</div>
+          <div class="testimonial-card__company">תכשיטי ברקוביץ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── טופס יצירת קשר ── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <h2 class="contact__title">דברו איתנו</h2>
+        <p class="contact__sub">להבטחת הצמיחה של העסק שלך – השאר פרטים ונחזור אליך</p>
+
+        <form class="contact__form">
+          <div class="form-group">
+            <label for="fname">שם פרטי *</label>
+            <input type="text" id="fname" name="fname" placeholder="ישראל" required />
           </div>
-        </div>
-
-        <div class="contact__form">
-          <h3 class="contact__form-title">שלחו לנו הודעה</h3>
-          <form>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="fname">שם פרטי</label>
-                <input type="text" id="fname" name="fname" placeholder="ישראל" />
-              </div>
-              <div class="form-group">
-                <label for="lname">שם משפחה</label>
-                <input type="text" id="lname" name="lname" placeholder="ישראלי" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">דוא"ל</label>
-              <input type="email" id="email" name="email" placeholder="name@example.com" dir="ltr" />
-            </div>
-            <div class="form-group">
-              <label for="phone">טלפון</label>
-              <input type="tel" id="phone" name="phone" placeholder="050-0000000" dir="ltr" />
-            </div>
-            <div class="form-group">
-              <label for="service">תחום עניין</label>
-              <select id="service" name="service">
-                <option value="">בחרו שירות...</option>
-                <option value="strategic">ייעוץ עסקי אסטרטגי</option>
-                <option value="flow">ניהול תזרים כלכלי היברידי</option>
-                <option value="personal">ניהול פיננסי אישי</option>
-                <option value="other">אחר</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">הודעה</label>
-              <textarea id="message" name="message" placeholder="ספרו לנו על העסק שלכם ומה אתם מחפשים..."></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">שליחה</button>
-          </form>
-        </div>
+          <div class="form-group">
+            <label for="phone">טלפון *</label>
+            <input type="tel" id="phone" name="phone" placeholder="050-0000000" dir="ltr" required />
+          </div>
+          <button type="submit" class="btn btn--salmon" style="width:100%;padding:14px;">שלחו</button>
+        </form>
       </div>
     </div>
   </section>
@@ -371,70 +258,43 @@
   <!-- ── Footer ── -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer__grid">
-        <div>
-          <div class="footer__brand-logo">HK</div>
-          <div class="footer__brand-name">קבוצת חזות קריספין</div>
-          <p class="footer__brand-desc">
-            כל עסק הוא ייחודי, ולכל לקוח יש צרכים ואתגרים שונים.
-            אנו מציעים פתרונות מותאמים אישית שמתמקדים בצמיחה, יעילות, ושיפור מתמיד.
-          </p>
-        </div>
-
-        <div>
-          <div class="footer__col-title">שירותים</div>
-          <ul class="footer__links">
-            <li><a href="strategic-business-consulting.html">ייעוץ עסקי אסטרטגי</a></li>
-            <li><a href="hybrid-economic-flow-management.html">ניהול תזרים כלכלי היברידי</a></li>
-            <li><a href="personal-financial-management.html">ניהול פיננסי אישי</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer__col-title">ניווט</div>
-          <ul class="footer__links">
-            <li><a href="index.html">ראשי</a></li>
-            <li><a href="#about">אודות</a></li>
-            <li><a href="meeting.html">קביעת פגישה</a></li>
-            <li><a href="privacy.html">מדיניות פרטיות</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer__col-title">צור קשר</div>
-          <a class="footer__phone" href="tel:+972559647897">055-964-7897</a>
-          <ul class="footer__links">
-            <li><a href="meeting.html">קביעת פגישה</a></li>
-            <li><a href="#contact">השאר פרטים</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer__bottom">
-        <span>© 2025 HK קבוצת חזות קריספין. כל הזכויות שמורות.</span>
+      <div class="site-footer__logo">HK</div>
+      <div class="site-footer__name">קבוצת חזות קריספין</div>
+      <nav class="site-footer__links">
+        <a href="index.html">בית</a>
+        <a href="strategic-business-consulting.html">ייעוץ עסקי</a>
+        <a href="hybrid-economic-flow-management.html">ניהול תזרים</a>
+        <a href="personal-financial-management.html">ניהול פיננסי אישי</a>
+        <a href="meeting.html">קביעת פגישה</a>
         <a href="privacy.html">מדיניות פרטיות</a>
+      </nav>
+      <div class="site-footer__copy">
+        © 2025 HK קבוצת חזות קריספין. כל הזכויות שמורות. | <a href="tel:+972559647897">055-964-7897</a>
       </div>
     </div>
   </footer>
 
+  <!-- WhatsApp Float -->
+  <a class="whatsapp-float" href="https://wa.me/972559647897" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
   <script>
-    // Sticky header shadow on scroll
+    // Sticky header shadow
     const header = document.getElementById('site-header');
     window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 20);
+      header.style.boxShadow = window.scrollY > 10
+        ? '0 4px 20px rgba(0,0,0,.12)'
+        : '0 2px 12px rgba(0,0,0,.06)';
     });
 
-    // Mobile nav toggle
+    // Mobile nav
     const toggle = document.getElementById('nav-toggle');
     const links  = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
-    });
-
-    // Close mobile nav on link click
-    links.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => links.classList.remove('open'));
-    });
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
   </script>
 </body>
 </html>
