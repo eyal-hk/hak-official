@@ -1217,27 +1217,17 @@ body, .mn-nav__links a {
   margin-top: 80px;
 }
 
-/* Photo */
+/* Photo — salmon bar baked in as border-bottom, zero gap */
 .ai-about__photo {
   width: 100% !important;
   height: 460px !important;
   object-fit: cover !important;
   object-position: center top !important;
   display: block !important;
-  flex-shrink: 0;
   margin: 0 !important;
   border-radius: 20px 20px 0 0 !important;
-}
-
-/* Salmon bar — snapped directly below photo */
-.ai-about__bar {
-  width: 100% !important;
-  height: 18px !important;
-  background: #e48375 !important;
-  border-radius: 0 0 10px 10px !important;
-  flex-shrink: 0;
-  margin: 0 !important;
-  display: block !important;
+  border-bottom: 18px solid #e48375 !important;
+  box-sizing: border-box !important;
 }
 
 /* Responsive */
