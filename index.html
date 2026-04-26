@@ -3,298 +3,756 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HK קבוצת חזות קריספין | כל הכלים להצלחת העסק שלך במקום אחד</title>
-  <meta name="description" content="כל עסק הוא ייחודי, ולכל לקוח יש צרכים ואתגרים שונים. אנו מציעים פתרונות מותאמים אישית שמתמקדים בצמיחה, יעילות, ושיפור מתמיד." />
-  <link rel="stylesheet" href="css/style.css" />
+  <title>HK Money AI – AI שמנהל לך את הכסף כל יום</title>
+  <meta name="description" content="שילוב מערכת AI ייעודית עם מנהל תזרים אישי ויועץ פיננסי — הכל בוואטסאפ, כל יום. תדע כמה כסף יהיה לך ביום שישי." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/money-hk-icon.png" />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HK Money AI – AI שמנהל לך את הכסף כל יום" />
+  <meta property="og:description" content="המחלקה הפיננסית ההיברידית הראשונה: ניהול תזרים אנושי, ליווי כלכלן אישי ומענה AI מיידי בוואטסאפ." />
+  <meta property="og:image" content="assets/money-hk-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HK Money AI – AI שמנהל לך את הכסף כל יום" />
+  <meta name="twitter:description" content="המחלקה הפיננסית ההיברידית הראשונה: ניהול תזרים אנושי, ליווי כלכלן אישי ומענה AI מיידי בוואטסאפ." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Karantina:wght@400;700&family=Rubik:wght@300;400;500;600;700&family=Open+Sans+Hebrew:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/money.css" />
+  <link rel="stylesheet" href="css/hk-money-ai.css?v=5" />
 </head>
 <body>
 
-  <!-- ── Header ── -->
-  <header class="site-header" id="site-header">
-    <div class="container">
-      <nav class="nav">
-        <!-- Logo (right in RTL) -->
-        <a href="index.html" class="nav__logo">
-          <span class="nav__logo-hk">HK</span>
-          <span class="nav__logo-text">חזות קריספין</span>
+  <!-- ── HEADER ── -->
+  <header class="mn-header" id="mn-header">
+    <div class="mn-wrap">
+      <nav class="mn-nav">
+        <a href="#" class="mn-logo">
+          <img src="assets/hkmoneylogo.png" alt="HK Money AI" class="mn-logo__img" />
         </a>
-
-        <!-- Links (left in RTL) -->
-        <ul class="nav__links" id="nav-links">
-          <li><a href="index.html" class="active">בית</a></li>
-          <li><a href="#products">מוצרים</a></li>
-          <li><a href="meeting.html" class="btn btn--salmon" style="padding:8px 22px;font-size:.9rem;">קביעת פגישה</a></li>
+        <ul class="mn-nav__links" id="mn-nav-links">
+          <li><a href="#trio">מה זה HK Money?</a></li>
+          <li><a href="#how">איך זה עובד?</a></li>
+          <li><a href="#demo">ככה זה נראה</a></li>
+          <li><a href="#testimonials">מה אומרים עלינו</a></li>
+          <li><a href="#contact" class="mn-btn mn-btn--salmon mn-nav__cta">רוצה לנסות</a></li>
         </ul>
-
-        <button class="nav__toggle" id="nav-toggle" aria-label="תפריט">
+        <button class="mn-nav__toggle" id="mn-toggle" aria-label="תפריט">
           <span></span><span></span><span></span>
         </button>
       </nav>
     </div>
   </header>
 
-  <!-- ── Hero ── -->
-  <section class="hero" id="home">
-    <div class="hero__bg"></div>
-    <div class="hero__overlay"></div>
-    <div class="container" style="position:relative;z-index:2;width:100%;">
-      <div class="hero__content">
-        <div class="hero__logo-big">
-          <span class="hero__name">קבוצת</span>
-          <span class="hero__hk">HK</span>
-        </div>
-        <div class="hero__name" style="font-size:clamp(1.8rem,3.5vw,3rem);margin-bottom:16px;">חזות קריספין</div>
-        <p class="hero__sub">כל הכלים להצלחת<br/>העסק שלך במקום אחד</p>
-        <a href="#contact" class="btn btn--salmon">אני רוצה להצליח</a>
-      </div>
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <section class="mn-hero" id="home">
+    <div class="mn-hero__bg-wrap">
+      <img src="assets/money-bg.jpg" alt="" class="mn-hero__bg-img" />
     </div>
-  </section>
-
-  <!-- ── השיטה שלנו ── -->
-  <section class="section" id="method">
-    <div class="container">
-      <div class="method__intro">
-        <span class="section-tag">הגישה שלנו</span>
-        <h2 class="section-title">השיטה שלנו</h2>
-        <p class="section-desc">
-          השיטה שלנו נבנתה מתוך הבנה שכל עסק הוא ייחודי, ולכל לקוח יש צרכים ואתגרים שונים.
-          לכן, אנו מציעים פתרונות מותאמים אישית שמתמקדים בצמיחה, יעילות, ושיפור מתמיד.
-        </p>
-        <a href="#contact" class="btn btn--salmon">אני רוצה להצליח</a>
-      </div>
-
-      <div class="method__steps">
-        <div class="method-step">
-          <div class="method-step__num">1</div>
-          <h3 class="method-step__title">הבנת המצב הנוכחי</h3>
-          <p class="method-step__text">
-            תחילת התהליך שלנו מבוססת על ניתוח מעמיק של מצבו הנוכחי של העסק.
-            אנו מבצעים סקירה יסודית של כל תחומי הפעילות – מהמבנה הארגוני ועד לפעילות הפיננסית,
-            במטרה להבין לעומק את נקודות החוזק והאתגרים שעומדים בפניו.
-          </p>
+    <div class="mn-hero__white-bottom"></div>
+    <div class="mn-hero__inner">
+      <h1 class="mn-hero__headline">
+        <img src="assets/hkmoneylogo.png" alt="HK Money AI" class="mn-hero__inline-logo" />: הסטנדרט החדש<br class="mn-hero__br--desk" />
+        <span class="mn-hero__accent">של הליווי הפיננסי.</span>
+      </h1>
+      <p class="mn-hero__sub">המחלקה הפיננסית ההיברידית הראשונה: <span class="mn-hero__layer">ניהול תזרים אנושי</span>, <span class="mn-hero__layer">ליווי כלכלן אישי</span> ו<span class="mn-hero__layer">מענה AI מיידי</span> בוואטסאפ. אנחנו לוקחים אחריות על המספרים — כדי שתוכל לנהל את הצמיחה.</p>
+      <a href="#contact" class="mn-btn mn-btn--salmon mn-hero__cta">אני רוצה ליווי כזה</a>
+      <div class="mn-hero__images">
+        <div class="mn-hero__chat-wrap">
+          <img src="assets/money-chat.png" alt="AI תזרים בוואטסאפ" class="mn-hero__chat-img" />
         </div>
-
-        <div class="method-step">
-          <div class="method-step__num">2</div>
-          <h3 class="method-step__title">יישום וביצוע</h3>
-          <p class="method-step__text">
-            אנו מאמינים שייעוץ עסקי לא מסתיים בתכנון, אלא מתחיל ביישום.
-            הצוות שלנו מלווה את הלקוחות בתהליך היישום, תוך מעקב אחר ההתקדמות
-            וביצוע התאמות בזמן אמת בהתאם לצרכים ולתנאי השוק המשתנים.
-          </p>
-        </div>
-
-        <div class="method-step">
-          <div class="method-step__num">3</div>
-          <h3 class="method-step__title">מעקב ושיפור מתמיד</h3>
-          <p class="method-step__text">
-            שיטת העבודה שלנו מתבססת על חתירה לשיפור מתמיד. אנו מבצעים מעקב שוטף
-            אחר הביצועים של העסק, מודדים את ההצלחה בהתאם ליעדים שנקבעו, וממשיכים
-            לייעץ ולהציע שיפורים על מנת להבטיח שהעסק נשאר בקו צמיחה מתמיד.
-          </p>
+        <div class="mn-hero__man-wrap">
+          <img src="assets/money-man.png" alt="בעל עסק עם HK Money AI" class="mn-hero__man-img" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── הצוות ── -->
-  <section class="section section--alt">
-    <div class="container">
-      <span class="section-tag">הצוות המוביל</span>
-      <h2 class="section-title">מי אנחנו?</h2>
-
-      <div class="team__grid">
-        <!-- אייל חזות -->
-        <div class="team-card">
-          <div class="team-card__avatar">א</div>
-          <div class="team-card__name">אייל חזות</div>
-          <div class="team-card__role">יזם ומומחה ייעוץ עסקי</div>
-          <p class="team-card__bio">
-            יזם ומומחה בעל שם בתחום הייעוץ העסקי, עם ניסיון עשיר בהובלת תהליכים
-            אסטרטגיים וניהוליים בחברות בכל סדר גודל. אייל הוא המייסד והבעלים של
-            BiziBox, ממשק לניהול פיננסי המשרת עשרות אלפי עסקים בישראל, וכן הוביל
-            את חברת הייעוץ המצליחה IFACT.
-          </p>
-          <p class="team-card__bio">
-            יחד, אנו בונים אסטרטגיות חכמות ומותאמות אישית שמובילות להצלחה עסקית
-            בת קיימא, תוך ליווי צמוד ושיתוף פעולה עם לקוחותינו לכל אורך הדרך.
-            בין אם מדובר בעסקים קטנים או חברות גדולות, הצוות שלנו כאן כדי לעזור.
-          </p>
-          <blockquote class="team-card__quote">
-            "אני מאמין שבכל עסק מסתתר סיפור ייחודי, ולא רק מספרים. מטרתי היא לספק לכל עסק
-            פתרון מקיף – משלב האסטרטגיה והתכנון ועד היישום בפועל. מספרים הם לא רק נתונים –
-            הם הסיפור האמיתי של העסק!"
-          </blockquote>
+  <!-- ══════════════════════════════════
+       PROBLEM
+  ══════════════════════════════════ -->
+  <section class="ai-problem">
+    <div class="mn-wrap">
+      <div class="ai-problem__inner">
+        <div class="ai-problem__text">
+          <span class="mn-tag">הבעיה שכולם מכירים</span>
+          <h2 class="mn-section-title">
+            הרו"ח אומר שיש רווח —<br />
+            <span class="mn-accent-salmon">אבל הבנק ריק.</span>
+          </h2>
+          <p>זה לא עסק גרוע. זו בעיה של ניהול תזרים. הפער בין רווח על הנייר לבין כסף בחשבון הוא בדיוק המקום שבו עסקים נופלים.</p>
+          <p>ChatGPT לא יפתור את זה. גיליון אקסל לא יפתור את זה. ויועץ שרואים פעם ברבעון — גם לא.</p>
+          <p><strong>מה שפותר את זה — ניהול יומיומי, עם AI שמבין עסקים ישראלים, ואדם אמיתי שאחראי על התוצאות.</strong></p>
+          <a href="#trio" class="mn-btn mn-btn--navy" style="margin-top:8px">תספרו לי עוד</a>
         </div>
-
-        <!-- אופיר קריספין -->
-        <div class="team-card">
-          <div class="team-card__avatar">א</div>
-          <div class="team-card__name">אופיר קריספין</div>
-          <div class="team-card__role">רואה חשבון מוסמך (C.P.A) | לשעבר CFO</div>
-          <p class="team-card__bio">
-            רואה חשבון מוסמך (C.P.A) ובעל תואר שני בחשבונאות וכלכלה, עם למעלה מ-10
-            שנות ניסיון בניהול כספים בחברות מובילות. כיהן כסמנכ"ל כספים (CFO) במספר
-            חברות גדולות ומגוונות במשק, מביא עמו ניסיון עשיר בניהול פיננסי ובפיתוח
-            אסטרטגיות כלכליות. אופיר בעל נסיון רב בניהול תזרימי מזומנים, בניית תקציבים
-            ותוכניות עסקיות המותאמים לצרכי העסק, התנהלות מול בנקים וחברות אשראי.
-          </p>
-          <blockquote class="team-card__quote">
-            "כרואה חשבון עם ניסיון במגוון חברות ותחומים אני מתמחה בליווי עסקים בגדלים שונים.
-            מטרתי היא לא רק לנהל את הכספים, אלא להוביל את העסק להצלחה פיננסית מתמשכת.
-            מספרים זה לא רק נתונים – זה הסיפור האמיתי של העסק!"
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── על הקבוצה ── -->
-  <section class="section section--navy">
-    <div class="container">
-      <div class="about__text">
-        <span class="section-tag">על הקבוצה</span>
-        <h2 class="section-title">חזות קריספין</h2>
-        <p class="section-desc" style="margin:0 auto;">
-          חזות קריספין הוא משרד ייעוץ מתקדם בהובלתם של אייל חזות ואופיר קריספין,
-          שני מומחים בעלי ניסיון עשיר ומעמיק בניהול וייעוץ עסקי, המציעים מגוון שירותים
-          מותאמים אישית לעסקים בכל גודל.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── המוצרים שלנו ── -->
-  <section class="section section--navy" id="products">
-    <div class="container">
-      <span class="section-tag">מה אנחנו מציעים</span>
-      <h2 class="section-title">המוצרים שלנו</h2>
-
-      <div class="products__grid">
-        <div class="product-card">
-          <div class="product-card__icon">💰</div>
-          <h3 class="product-card__title">HK-Money</h3>
-          <p class="product-card__desc">
-            שילוב מנצח של מנהל כספים מקצועי ומערכת מהפכנית מבוססת AI לניהול שוטף,
-            אמין, מקצועי ובטוח של התזרים בעסק.
-          </p>
-          <a href="hybrid-economic-flow-management.html" class="product-card__link">ספרו לי עוד</a>
-        </div>
-
-        <div class="product-card">
-          <div class="product-card__icon">🎯</div>
-          <h3 class="product-card__title">ייעוץ עסקי אסטרטגי</h3>
-          <p class="product-card__desc">
-            פתרון אסטרטגי מלא הכולל דיוק, מיקוד וייחודיות עסקית, סידור תהליכי העבודה,
-            שיווק, ניהול כספים ומכירות לייעול וצמיחה עסקית.
-          </p>
-          <a href="strategic-business-consulting.html" class="product-card__link">ספרו לי עוד</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── המלצות ── -->
-  <section class="section section--alt">
-    <div class="container">
-      <span class="section-tag">מה אומרים עלינו</span>
-      <h2 class="section-title">לקוחות ממליצים</h2>
-
-      <div class="testimonials__grid">
-        <div class="testimonial-card">
-          <p class="testimonial-card__quote">
-            עם אתגר אדיר של גדילה עסקית מחנות אחת לרשת בפריסה ארצית חיפשתי מלווה עסקי בעל נסיון מוכח,
-            בעזרת הליווי הצמוד של אופיר הבנתי איך לנהל את הצמיחה הפיננסית על הצד הטוב ביותר.
-          </p>
-          <div class="testimonial-card__name">עמית אגיב</div>
-          <div class="testimonial-card__company">מיתוקית – רשת חנויות פרחים ומארזים</div>
-        </div>
-
-        <div class="testimonial-card">
-          <p class="testimonial-card__quote">
-            בעסק כל כך תנודתי של הפקות הארועים, HK בליווי צמוד של אופיר הפכו את ניהול התקציב
-            החודשי שלי מאתגר למנוף עסקי.
-          </p>
-          <div class="testimonial-card__name">פנינה סאקס</div>
-          <div class="testimonial-card__company">ראש חוצות בע"מ – עסק להפקת ארועים</div>
-        </div>
-
-        <div class="testimonial-card">
-          <p class="testimonial-card__quote">
-            לפני שהכרתי את HK ואת אופיר לא הבנתי לאן הולך הכסף. עכשיו, אחריי שהתחלתי
-            לנהל תזרים מזומנים אני מבין היכן הכסף שלי.
-          </p>
-          <div class="testimonial-card__name">מיקי ברקוביץ</div>
-          <div class="testimonial-card__company">תכשיטי ברקוביץ</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── טופס יצירת קשר ── -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact__inner">
-        <h2 class="contact__title">דברו איתנו</h2>
-        <p class="contact__sub">להבטחת הצמיחה של העסק שלך – השאר פרטים ונחזור אליך</p>
-
-        <form class="contact__form">
-          <div class="form-group">
-            <label for="fname">שם פרטי *</label>
-            <input type="text" id="fname" name="fname" placeholder="ישראל" required />
+        <div class="ai-problem__stats">
+          <div class="ai-problem__stat">
+            <span class="ai-problem__num">82%</span>
+            <span class="ai-problem__label">מהעסקים שנסגרים — נסגרים בגלל בעיות תזרים, לא חוסר רווחיות</span>
           </div>
-          <div class="form-group">
-            <label for="phone">טלפון *</label>
-            <input type="tel" id="phone" name="phone" placeholder="050-0000000" dir="ltr" required />
+          <div class="ai-problem__stat">
+            <span class="ai-problem__num">1 מתוך 3</span>
+            <span class="ai-problem__label">בעלי עסקים לא יודעים מה תהיה היתרה שלהם בעוד שבועיים</span>
           </div>
-          <button type="submit" class="btn btn--salmon" style="width:100%;padding:14px;">שלחו</button>
-        </form>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Footer ── -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__logo">HK</div>
-      <div class="site-footer__name">קבוצת חזות קריספין</div>
-      <nav class="site-footer__links">
-        <a href="index.html">בית</a>
-        <a href="strategic-business-consulting.html">ייעוץ עסקי</a>
-        <a href="hybrid-economic-flow-management.html">ניהול תזרים</a>
-        <a href="personal-financial-management.html">ניהול פיננסי אישי</a>
-        <a href="meeting.html">קביעת פגישה</a>
-        <a href="privacy.html">מדיניות פרטיות</a>
-      </nav>
-      <div class="site-footer__copy">
-        © 2025 HK קבוצת חזות קריספין. כל הזכויות שמורות. | <a href="tel:+972559647897">055-964-7897</a>
+  <!-- ══════════════════════════════════
+       TRIO — THE CORE DIFFERENTIATOR
+  ══════════════════════════════════ -->
+  <section class="ai-trio" id="trio">
+    <div class="mn-wrap">
+      <div class="ai-trio__header">
+        <span class="mn-tag mn-tag--center">מה שאף אחד אחר לא נותן</span>
+        <h2 class="mn-section-title mn-section-title--center">
+          לא AI בלבד. לא יועץ בלבד.<br />
+          <span class="mn-accent-salmon">שלושה מומחים שעובדים יחד — בשבילך.</span>
+        </h2>
+        <p class="ai-trio__sub">רוב הפתרונות בשוק נותנים לך אחד מהשלושה. אנחנו נותנים את כולם, ביחד, כל יום.</p>
       </div>
+
+      <div class="ai-trio__grid">
+
+        <!-- שכבה 1: מנהל תזרים אנושי -->
+        <div class="ai-trio__card ai-trio__card--manager">
+          <div class="ai-trio__card-badge">01</div>
+          <div class="ai-trio__card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="30" fill="#E8EFF5"/>
+              <circle cx="30" cy="22" r="7" stroke="#0c4068" stroke-width="2.2"/>
+              <path d="M15 48c0-8.284 6.716-15 15-15s15 6.716 15 15" stroke="#0c4068" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M37 32l2 2 4-4" stroke="#0c4068" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>מנהל תזרים אנושי צמוד</h3>
+          <p class="ai-trio__role-label">העיניים שלך על הכסף</p>
+          <ul class="ai-trio__list">
+            <li>מנהל תזרים אמיתי — בן אדם</li>
+            <li>בקרה ופיקוח יומיומי על תנועות הכסף</li>
+            <li>אחראי על הדיוק — לא רק "מייעץ"</li>
+            <li>שקט נפשי מוחלט</li>
+          </ul>
+        </div>
+
+        <!-- שכבה 2: כלכלן אסטרטגי -->
+        <div class="ai-trio__card ai-trio__card--advisor">
+          <div class="ai-trio__card-badge">02</div>
+          <div class="ai-trio__card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="30" fill="#FCECEA"/>
+              <polyline points="10,44 20,30 28,36 40,18 50,22" stroke="#e48375" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="50" cy="22" r="3" fill="#e48375"/>
+              <line x1="10" y1="48" x2="50" y2="48" stroke="#e48375" stroke-width="1.5" stroke-dasharray="2 3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>ליווי כלכלן אסטרטגי</h3>
+          <p class="ai-trio__role-label">המוח שמאחורי הצמיחה</p>
+          <ul class="ai-trio__list">
+            <li>פגישה חודשית עם כלכלן בכיר</li>
+            <li>ניתוח רווחיות ותחזיות צמיחה</li>
+            <li>תכנון פיננסי לטווח הארוך</li>
+            <li>החלטות חכמות מבוססות דאטה</li>
+          </ul>
+        </div>
+
+        <!-- שכבה 3: AI -->
+        <div class="ai-trio__card ai-trio__card--ai">
+          <div class="ai-trio__card-badge">03</div>
+          <div class="ai-trio__card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="30" fill="#EBF7FD"/>
+              <rect x="14" y="18" width="32" height="24" rx="5" stroke="#39ABE2" stroke-width="2.2"/>
+              <circle cx="22" cy="30" r="3" fill="#39ABE2"/>
+              <circle cx="38" cy="30" r="3" fill="#39ABE2"/>
+              <path d="M22 42v3M38 42v3" stroke="#39ABE2" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M14 30H10M50 30h-4" stroke="#39ABE2" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>מענה AI מיידי בוואטסאפ</h3>
+          <p class="ai-trio__role-label">התשובות שלך בכיס</p>
+          <ul class="ai-trio__list">
+            <li>שאל שאלות וקבל דוחות בזמן אמת</li>
+            <li>תובנות פיננסיות ישירות לוואטסאפ</li>
+            <li>התראות לפני שיש בעיה</li>
+            <li>פשוט, מהיר וזמין 24/7</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="ai-trio__connector">
+        <div class="ai-trio__connector-text">
+          שלושתם מתקשרים ביניהם — כל יום — כך שתמיד יש מישהו שמסתכל על הכסף שלך
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FIRST CONTACT FORM
+  ══════════════════════════════════ -->
+  <section class="mn-contact" id="lead">
+    <div class="mn-wrap mn-contact__inner">
+      <form class="mn-contact__form" id="lead-form" onsubmit="return false">
+        <p class="mn-contact__form-title">השאירו פרטים — נחזור תוך 24 שעות</p>
+        <input type="text" placeholder="שם מלא" class="mn-input" required />
+        <input type="tel" placeholder="טלפון" class="mn-input" required />
+        <input type="email" placeholder="מייל" class="mn-input" />
+        <button type="submit" class="mn-btn mn-btn--salmon mn-btn--full">
+          רוצה AI + מנהל + יועץ בשבילי
+        </button>
+        <p class="mn-contact__fine">ללא התחייבות · הדגמה חינמית · בוואטסאפ שלכם</p>
+      </form>
+      <div class="mn-contact__text">
+        <h2 class="mn-section-title mn-section-title--white">
+          מיוחד לעסקים קטנים<br />ובינוניים בישראל
+        </h2>
+        <p class="mn-contact__sub">אתם לא צריכים לבחור בין AI לבין ליווי אנושי — אנחנו נותנים לכם את שניהם, בוואטסאפ, כל יום.</p>
+        <div class="mn-contact__badges">
+          <span class="mn-badge">✓ ללא התחייבות</span>
+          <span class="mn-badge">✓ הדגמה חינמית</span>
+          <span class="mn-badge">✓ בוואטסאפ שלכם</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       HOW IT WORKS
+  ══════════════════════════════════ -->
+  <section class="mn-features" id="how">
+    <div class="mn-wrap">
+      <div class="mn-features__header">
+        <span class="mn-tag mn-tag--center">איך זה עובד ביומיום?</span>
+        <h2 class="mn-section-title mn-section-title--center">
+          כל יום — בלי שתעשה כלום —<br />
+          <span class="mn-accent-salmon">הכסף שלך מנוהל</span>
+        </h2>
+      </div>
+      <div class="ai-how-grid">
+        <div class="ai-how-step">
+          <div class="ai-how-step__num">01</div>
+          <h3>לילה — AI עובד</h3>
+          <p>בזמן שאתה ישן, מנוע ה-AI מושך נתונים מחשבונות הבנק, מנתח כל תנועה, ומכין סיכום מוכן לבוקר.</p>
+        </div>
+        <div class="ai-how-arrow">←</div>
+        <div class="ai-how-step">
+          <div class="ai-how-step__num">02</div>
+          <h3>בוקר — המנהל בודק</h3>
+          <p>מנהל התזרים האישי שלך עובר על הנתונים, מוודא דיוק, מעדכן תחזית ומתריע על כל דבר חריג.</p>
+        </div>
+        <div class="ai-how-arrow">←</div>
+        <div class="ai-how-step">
+          <div class="ai-how-step__num">03</div>
+          <h3>אתה — רק מסתכל</h3>
+          <p>פותח וואטסאפ, רואה עדכון יומי מסודר. שואל שאלה — מקבל תשובה. הכסף מנוהל.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FEATURES  (5 cards from Figma 2018-4318)
+  ══════════════════════════════════ -->
+  <section class="ai-features" id="features">
+    <div class="mn-wrap">
+      <div class="ai-features__header">
+        <span class="mn-tag mn-tag--center">הכירו את HK Money</span>
+        <h2 class="mn-section-title mn-section-title--center">
+          מנהל הכספים החכם שלכם —<br />
+          <span class="mn-accent-salmon">פשוט, אישי, תמיד שם</span>
+        </h2>
+        <p class="ai-features__tagline">
+          מערכת המשלבת מנוע AI מתקדם וייעודי עם מנהל כספים אישי שמכיר אותך ואת העסק שלך אישית
+        </p>
+      </div>
+
+      <div class="ai-features__grid">
+        <!-- Simple -->
+        <div class="ai-feat-card">
+          <div class="ai-feat-card__icon">
+            <img src="assets/feat-icon-simple.svg" alt="" class="ai-feat-card__icon-img" />
+          </div>
+          <h3 class="ai-feat-card__title">פשוט</h3>
+          <p class="ai-feat-card__text">נתונים פיננסיים זורמים<br />אוטומטית למערכת — אתה לא עושה כלום</p>
+        </div>
+        <!-- Personal -->
+        <div class="ai-feat-card">
+          <div class="ai-feat-card__icon">
+            <img src="assets/feat-icon-personal.svg" alt="" class="ai-feat-card__icon-img" />
+          </div>
+          <h3 class="ai-feat-card__title">אישי</h3>
+          <p class="ai-feat-card__text">גם המערכת וגם היועץ מכירים<br />אותך ואת העסק שלך לעומק</p>
+        </div>
+        <!-- Hybrid -->
+        <div class="ai-feat-card">
+          <div class="ai-feat-card__icon">
+            <img src="assets/feat-icon-hybrid.svg" alt="" class="ai-feat-card__icon-img" />
+          </div>
+          <h3 class="ai-feat-card__title">היברידי</h3>
+          <p class="ai-feat-card__text">מומחה אנושי מקבל נתונים<br />ישירות מה-AI ופועל בהתאם</p>
+        </div>
+        <!-- Active -->
+        <div class="ai-feat-card">
+          <div class="ai-feat-card__icon">
+            <img src="assets/feat-icon-active.svg" alt="" class="ai-feat-card__icon-img" />
+          </div>
+          <h3 class="ai-feat-card__title">אקטיבי</h3>
+          <p class="ai-feat-card__text">המלצות והתראות נשלחות<br />בזמן אמת לוואטסאפ</p>
+        </div>
+        <!-- Available -->
+        <div class="ai-feat-card">
+          <div class="ai-feat-card__icon">
+            <img src="assets/feat-icon-available.svg" alt="" class="ai-feat-card__icon-img" />
+          </div>
+          <h3 class="ai-feat-card__title">זמין</h3>
+          <p class="ai-feat-card__text">מענה 24/7<br />לכל שאלה או מידע</p>
+        </div>
+      </div>
+
+      <div class="ai-features__cta">
+        <a href="#contact" class="mn-btn mn-btn--salmon">מתאים לי!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       DEMO — phone with real image
+  ══════════════════════════════════ -->
+  <section class="mn-demo" id="demo">
+    <div class="mn-wrap mn-demo__inner">
+      <div class="mn-demo__text">
+        <span class="mn-tag">ככה זה נראה בפועל</span>
+        <h2 class="mn-section-title">
+          כל בוקר מגיע עדכון<br />
+          <span class="mn-accent-blue">לוואטסאפ שלך</span>
+        </h2>
+        <p class="mn-demo__body">המנהל עיבד. ה-AI ניתח. הכל מסודר ומחכה לך — יתרה, תנועות, תחזית, והתראות.</p>
+        <div class="mn-demo__features">
+          <div class="mn-demo__feat">
+            <span class="mn-demo__feat-icon">☀️</span>
+            <div>
+              <strong>עדכון תזרים יומי</strong>
+              <p>יתרה נוכחית + מה נכנס ויצא + תחזית לשבוע</p>
+            </div>
+          </div>
+          <div class="mn-demo__feat">
+            <span class="mn-demo__feat-icon">🔔</span>
+            <div>
+              <strong>התראות חכמות</strong>
+              <p>תשלום שלא הגיע? חריגה בהוצאות? — לפני שזה בעיה</p>
+            </div>
+          </div>
+          <div class="mn-demo__feat">
+            <span class="mn-demo__feat-icon">🎯</span>
+            <div>
+              <strong>מעקב תקציב מול יעד</strong>
+              <p>כל בוקר תדע אם אתה בתקציב — ומה הקצב שלך מול היעד החודשי</p>
+            </div>
+          </div>
+          <div class="mn-demo__feat">
+            <span class="mn-demo__feat-icon">💬</span>
+            <div>
+              <strong>שאל את ה-AI</strong>
+              <p>"כמה הוצאתי על שיווק החודש?" — תשובה תוך שנייה</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="mn-btn mn-btn--navy">אני רוצה ככה לנהל את הכסף שלי</a>
+      </div>
+      <div class="mn-demo__phone">
+        <div class="wa-chat-card">
+          <div class="wa-chat-card__body">
+            <div class="wa-chat-card__msg wa-chat-card__msg--out">
+              <div class="wa-chat-card__bubble wa-chat-card__bubble--out">מה צפוי לרדת לי מהחשבון השבוע?</div>
+              <span class="wa-chat-card__time">12:21 ✓✓</span>
+            </div>
+            <div class="wa-chat-card__msg wa-chat-card__msg--in">
+              <div class="wa-chat-card__bubble wa-chat-card__bubble--in">
+                <div class="wa-cf__title">חברת לדוגמה בע"מ</div>
+                <div class="wa-cf__subtitle">תחזית תזרים שבועית</div>
+                <div class="wa-cf__date-line">נכון לבוקר יום ב׳, 26.3.2026</div>
+                <div class="wa-cf__balance-line">יתרת עו"ש נוכחית: <strong>75,187 ₪</strong></div>
+                <div class="wa-cf__divider"></div>
+                <div class="wa-cf__note">• פעולות שצפינו ועוד לא קרו</div>
+                <div class="wa-cf__item wa-cf__item--out">תשלום לספק מזון מרכזי<span>-25,000</span></div>
+                <div class="wa-cf__item wa-cf__item--out">העברה לקרן פנסיה עובדים<span>-12,639</span></div>
+                <div class="wa-cf__day-header">יום ב׳ — 27.3.2026</div>
+                <div class="wa-cf__item wa-cf__item--in">הכנסות מסליקה<span>+4,105</span></div>
+                <div class="wa-cf__item wa-cf__item--in">תשלום מלקוח עסקי<span>+864</span></div>
+                <div class="wa-cf__item wa-cf__item--out">משכורות עובדים<span>-65,000</span></div>
+                <div class="wa-cf__eod wa-cf__eod--neg">יתרה סוף יום: <strong>-61,258 ₪</strong></div>
+                <div class="wa-cf__day-header">יום ג׳ — 28.3.2026</div>
+                <div class="wa-cf__item wa-cf__item--in">הכנסות מסליקה<span>+667</span></div>
+                <div class="wa-cf__item wa-cf__item--out">ספק משקאות גדול<span>-4,000</span></div>
+              </div>
+              <span class="wa-chat-card__time">08:14</span>
+            </div>
+            <div class="wa-chat-card__msg wa-chat-card__msg--out">
+              <div class="wa-chat-card__bubble wa-chat-card__bubble--out">איך אני מול התקציב החודש?</div>
+              <span class="wa-chat-card__time">08:15 ✓✓</span>
+            </div>
+            <div class="wa-chat-card__msg wa-chat-card__msg--in">
+              <div class="wa-chat-card__bubble wa-chat-card__bubble--in">
+                <div class="wa-cf__title">מעקב תקציב — מרץ 2026</div>
+                <div class="wa-cf__date-line">עברו 26 מתוך 31 ימים (84%)</div>
+                <div class="wa-cf__divider"></div>
+                <div class="wa-cf__item wa-cf__item--out">הוצאות בפועל<span>87,450 ₪</span></div>
+                <div class="wa-cf__item">יעד חודשי<span style="color:#0c4068;font-weight:700">95,000 ₪</span></div>
+                <div class="wa-cf__divider"></div>
+                <div class="wa-cf__eod wa-cf__eod--pos">נותר בתקציב: <strong>7,550 ₪ ✅</strong></div>
+                <div class="wa-cf__note" style="margin-top:6px">אתה מתנהל יפה — בקצב הנוכחי תסגור את החודש מתחת ליעד.</div>
+              </div>
+              <span class="wa-chat-card__time">08:15</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════ -->
+  <section class="mn-testimonials" id="testimonials">
+    <div class="mn-wrap">
+      <h2 class="mn-section-title mn-section-title--center mn-section-title--white">מה אומרים עלינו?</h2>
+      <p class="mn-testimonials__sub">אל תקשיבו לנו — תקשיבו לבעלי עסקים בדיוק כמוכם שכבר מנהלים את הכסף שלהם חכם</p>
+      <div class="mn-testimonials__track" id="mn-testimonials-track">
+        <div class="mn-testimonial-card">
+          <div class="mn-testimonial-card__stars">★★★★★</div>
+          <p class="mn-testimonial-card__quote">"לפני HK Money הייתי מנסה לנחש אם יש לי כסף לשלם משכורות. היום אני יודע 10 ימים קדימה. שינה לי את החיים."</p>
+          <p class="mn-testimonial-card__name">דני כהן</p>
+          <p class="mn-testimonial-card__role">בעל חברת ייבוא, 12 עובדים</p>
+        </div>
+        <div class="mn-testimonial-card">
+          <div class="mn-testimonial-card__stars">★★★★★</div>
+          <p class="mn-testimonial-card__quote">"הרו"ח שלי תמיד הראה רווח אבל הבנק היה ריק. HK Money הסבירה לי למה — ועזרה לי לתקן את זה."</p>
+          <p class="mn-testimonial-card__name">מיכל רוזנברג</p>
+          <p class="mn-testimonial-card__role">בעלת רשת קפה, 3 סניפים</p>
+        </div>
+        <div class="mn-testimonial-card">
+          <div class="mn-testimonial-card__stars">★★★★★</div>
+          <p class="mn-testimonial-card__quote">"ה-AI עונה לשאלות שהרו"ח גבה ממני שעתיים לענות עליהן. מה שחשבתי שלוקח הרבה זמן — עכשיו שנייה בוואטסאפ."</p>
+          <p class="mn-testimonial-card__name">אמיר שפירא</p>
+          <p class="mn-testimonial-card__role">קבלן שיפוצים, 8 עובדים</p>
+        </div>
+        <div class="mn-testimonial-card">
+          <div class="mn-testimonial-card__stars">★★★★★</div>
+          <p class="mn-testimonial-card__quote">"קיבלתי התראה שיש לי חריגה בהוצאות שיווק. בדקתי — היה חיוב כפול. חסכתי ₪3,400 בגלל התראה אחת."</p>
+          <p class="mn-testimonial-card__name">רחל גולן</p>
+          <p class="mn-testimonial-card__role">חנות אונליין, מחזור שנתי ₪2M</p>
+        </div>
+        <div class="mn-testimonial-card">
+          <div class="mn-testimonial-card__stars">★★★★★</div>
+          <p class="mn-testimonial-card__quote">"פעם הייתי מתעורר בלילה מדאגות על הכסף. היום אני יודע שמישהו מנהל את זה בשבילי — AI ואדם. ישן טוב יותר."</p>
+          <p class="mn-testimonial-card__name">יוסי לוי</p>
+          <p class="mn-testimonial-card__role">מסעדן, 2 סניפים</p>
+        </div>
+      </div>
+      <div class="mn-testimonials__nav">
+        <button class="mn-testimonials__arrow" id="mn-prev" aria-label="הקודם">&#8249;</button>
+        <button class="mn-testimonials__arrow" id="mn-next" aria-label="הבא">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       ABOUT  (Figma 2044-13471)
+  ══════════════════════════════════ -->
+  <section class="ai-about" id="about">
+    <div class="ai-about__bg"></div>
+
+    <div class="mn-wrap ai-about__wrap">
+
+      <div class="ai-about__row">
+
+        <!-- Text side (right in RTL) -->
+        <div class="ai-about__text-col">
+          <h2 class="ai-about__title">הכירו את הפנים<br/>מאחורי HK Money</h2>
+          <p class="ai-about__intro">את המערכת תכננו אנשים שחיים ונושמים עסקים בישראל, במיוחד מהכיוון הפיננסי. החזון, הלב וההבנה הטוטאלית מה בעלי עסקים בישראל צריכים, מגיעה משני אנשים — אייל חזות ואופיר קריספין.</p>
+          <div class="ai-about__bottom">
+            <p class="ai-about__bottom-line">HK Money מסתכל איתך קדימה!</p>
+            <a href="#contact" class="mn-btn mn-btn--salmon">אני רוצה ליווי כזה</a>
+          </div>
+        </div>
+
+        <!-- Two cards (left in RTL) — second card offset down -->
+        <div class="ai-about__cards-col">
+
+          <!-- אייל חזות -->
+          <div class="ai-about__card">
+            <img src="assets/eyal1.png" alt="אייל חזות" class="ai-about__photo" />
+          </div>
+
+          <!-- אופיר קריספין — offset -->
+          <div class="ai-about__card ai-about__card--offset">
+            <img src="assets/ofir1.png" alt="אופיר קריספין" class="ai-about__photo" />
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FAQ  (from Figma 2032-9936)
+  ══════════════════════════════════ -->
+  <section class="ai-faq" id="faq">
+    <div class="mn-wrap">
+      <h2 class="ai-faq__title">שאלות נפוצות (וגם תשובות!)</h2>
+      <div class="ai-faq__list">
+
+        <div class="ai-faq__item ai-faq__item--open">
+          <button class="ai-faq__question" aria-expanded="true">
+            <span class="ai-faq__question-text">זה רק תוכנה?</span>
+            <span class="ai-faq__icon">−</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>לא. זה שירות היברידי שמשלב אנשי מקצוע (מנהל תזרים וכלכלן) יחד עם טכנולוגיית AI. אנחנו לא נותנים לך כלי עבודה — אנחנו לוקחים ממך את העבודה.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">איך נרשמים?</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>זה פשוט וקל! לוחצים על אחד הכפתורים בטופס, ממלאים פרטים ואנחנו חוזרים אליכם. למה לא ישר להירשם? כי חשוב לנו לעשות אתכם שיחה קצרה, לוודא שהמערכת מתאימה לכם ב-100% ולהסביר איך מבצעים את השלבים הראשונים.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">כבר יש לי רואה חשבון ויועץ עסקי, למה אני צריך את זה?</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>הרו"ח שלכם עוסק בדיווחים, מסים ורגולציה — לא בניהול תזרים יומיומי. אנחנו ממלאים את הפער: מי שמסתכל על הכסף שלכם כל יום, מתריע בזמן אמת ועוזר לכם לקבל החלטות בוקר בוקר. הרו"ח לא עושה את זה — ולא אמור.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">אני בסה"כ עסק עצמאי קטן, נראה שזה מתאים לעסקים גדולים יותר?</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>ההפך. עסקים גדולים יש להם מנהלי כספים פנים-ארגוניים. עסקים קטנים ובינוניים — הם בדיוק מי שהכי זקוק לזה ולרוב הכי חסרים לו. HK Money AI נבנה במיוחד בשביל עסקים כמו שלכם.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">אני לא סומך על AI לנהל לי את הכסף בעסק!</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>זו בדיוק הסיבה שיש מנהל תזרים אנושי. ה-AI מנתח ומתריע — אבל אדם אמיתי בודק, מוודא ואחראי על הנתונים. אתם לא תלויים רק במכונה. תמיד יש אדם מאחורי המערכת.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">למי יש זמן ללמוד עוד מערכת חדשה?</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>אין מה ללמוד. הכל מגיע לוואטסאפ שלכם — שם אתם כבר נמצאים. אין אפליקציה חדשה, אין דשבורד להתחבר אליו, אין הדרכות. פותחים וואטסאפ — הכל שם.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">אני לא מבין כלום בנושאים פיננסיים — מה שוות ההמלצות?</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>המערכת מדברת בשפה אנושית, לא בשפה פיננסית. "יש לך ₪12,000 בחשבון, ביום חמישי יצאו משכורות של ₪18,000 — צריך לסדר את זה עד אז." כך זה נראה. פשוט, ברור, וניתן לפעולה.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">הולך לי לא רע בינתיים — למה לשנות?</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>רוב העסקים שנסגרו "הלך להם לא רע" שבוע לפני שסגרו. בעיות תזרים מתפתחות לאט ומגיעות בהפתעה. HK Money AI נועד בדיוק לזה — לזהות את הבעיות לפני שהן מגיעות.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">האם המערכת בטוחה? לא נוח לי לחבר אותה לחשבונות שלי.</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>אנחנו עובדים עם חברות Open Banking מורשות שפועלות תחת רגולציה מלאה של בנק ישראל. לא שומרים סיסמאות, ואין גישה להעברות כספים — קריאה בלבד. אותם תקנים שעובד איתם הבנק שלכם.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">מה כולל ניהול הכספים שלכם ב-HK?</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>עדכון תזרים יומי בוואטסאפ, תחזית שבועית ומעקב רציף, התראות חכמות על חריגות ותשלומים עתידיים, מענה לשאלות דרך ה-AI 24/7, ופגישת ייעוץ חודשית עם יועץ פיננסי לתכנון קדימה.</p>
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question" aria-expanded="false">
+            <span class="ai-faq__question-text">שווה לשלם על מערכת לניהול כספים? נשמע כמו פריווילגיה לעשירים…</span>
+            <span class="ai-faq__icon">+</span>
+          </button>
+          <div class="ai-faq__answer">
+            <p>ההיפך הוא הנכון. התשלום על מניעת בעיה אחת — תשלום שלא הגיע, חיוב כפול, מינוס לא מתוכנן — מחזיר את עצמו עשרות מונים. הלקוחות שלנו מדווחים על חיסכון ממוצע של אלפי שקלים בחודש הראשון בלבד.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       PRICING
+  ══════════════════════════════════ -->
+  <section class="ai-pricing" id="pricing">
+    <div class="mn-wrap">
+      <div class="ai-pricing__header">
+        <span class="mn-tag mn-tag--center">מסלולי ליווי</span>
+        <h2 class="mn-section-title mn-section-title--center">
+          בחר את המסלול<br/>
+          <span class="mn-accent-salmon">המתאים לעסק שלך</span>
+        </h2>
+      </div>
+
+      <div class="ai-pricing__grid">
+
+        <!-- Plan 1: HK Money -->
+        <div class="ai-pricing__card">
+          <div class="ai-pricing__plan-name">HK Money</div>
+          <div class="ai-pricing__price">
+            <span class="ai-pricing__from">החל מ-</span>
+            <span class="ai-pricing__amount">649</span>
+            <span class="ai-pricing__currency">₪</span>
+            <span class="ai-pricing__vat">+ מע"מ / חודש</span>
+          </div>
+          <ul class="ai-pricing__features">
+            <li>ניהול תזרים אנושי יומיומי</li>
+            <li>עדכון תזרים בוואטסאפ כל בוקר</li>
+            <li>מענה AI מיידי 24/7</li>
+            <li>התראות חכמות בזמן אמת</li>
+            <li>תחזית שבועית ומעקב רציף</li>
+          </ul>
+          <a href="#contact" class="mn-btn mn-btn--navy mn-btn--full">מתחילים</a>
+        </div>
+
+        <!-- Plan 2: HK Money+ -->
+        <div class="ai-pricing__card ai-pricing__card--plus">
+          <div class="ai-pricing__badge">הכי פופולרי</div>
+          <div class="ai-pricing__plan-name">HK Money<span class="ai-pricing__plus">+</span></div>
+          <div class="ai-pricing__price">
+            <span class="ai-pricing__from">החל מ-</span>
+            <span class="ai-pricing__amount">1,000</span>
+            <span class="ai-pricing__currency">₪</span>
+            <span class="ai-pricing__vat">+ מע"מ / חודש</span>
+          </div>
+          <ul class="ai-pricing__features">
+            <li>כל מרכיבי מסלול HK Money</li>
+            <li>פגישת אסטרטגיה חודשית עם כלכלן</li>
+            <li>ניתוח רווחיות ותחזיות צמיחה</li>
+            <li>תוכנית פיננסית אישית לעסק</li>
+            <li>ליווי מלא — AI + אנושי + כלכלן</li>
+          </ul>
+          <a href="#contact" class="mn-btn mn-btn--salmon mn-btn--full">מתחילים</a>
+        </div>
+
+      </div>
+
+      <p class="ai-pricing__note">ללא התחייבות · הדגמה חינמית · ביטול בכל עת</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FINAL CONTACT
+  ══════════════════════════════════ -->
+  <section class="mn-contact" id="contact">
+    <div class="mn-wrap mn-contact__inner">
+      <form class="mn-contact__form" id="mn-form" onsubmit="return false">
+        <p class="mn-contact__form-title">מלאו פרטים — נחזור אליכם תוך 24 שעות</p>
+        <input type="text" placeholder="שם מלא" class="mn-input" required />
+        <input type="tel" placeholder="טלפון" class="mn-input" required />
+        <input type="email" placeholder="מייל" class="mn-input" />
+        <input type="text" placeholder="שם העסק" class="mn-input" />
+        <button type="submit" class="mn-btn mn-btn--salmon mn-btn--full mn-btn--xl">
+          רוצה AI + מנהל + יועץ בשבילי
+        </button>
+        <p class="mn-contact__fine">נחזור אליכם תוך 24 שעות. ללא ספאם, ללא מכירות אגרסיביות.</p>
+      </form>
+      <div class="mn-contact__text">
+        <h2 class="mn-section-title mn-section-title--white">
+          רוצים לדעת כמה כסף<br />יהיה לכם ביום שישי?
+        </h2>
+        <p class="mn-contact__sub">הדגמה אישית, חינמית, בוואטסאפ. תראו איך זה עובד ותחליטו.</p>
+        <div class="mn-contact__badges">
+          <span class="mn-badge">✓ ללא התחייבות</span>
+          <span class="mn-badge">✓ הדגמה חינמית</span>
+          <span class="mn-badge">✓ תוצאות תוך שבוע</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="mn-footer">
+    <div class="mn-wrap mn-footer__inner">
+      <a href="#" class="mn-logo mn-logo--footer">
+        <img src="assets/hkmoneylogo.png" alt="HK Money AI" class="mn-logo__img" />
+      </a>
+      <div class="mn-footer__social">
+        <a href="#" class="mn-social-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.099.543 4.07 1.497 5.785L0 24l6.393-1.675A11.947 11.947 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.857 0-3.594-.5-5.091-1.376L3 21.764l1.167-3.79A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+        <a href="#" class="mn-social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="#" class="mn-social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+      </div>
+      <p class="mn-footer__copy">© 2025 HK Money AI | חזות קריספין | <a href="privacy.html" style="color:inherit">מדיניות פרטיות</a></p>
     </div>
   </footer>
 
-  <!-- WhatsApp Float -->
-  <a class="whatsapp-float" href="https://wa.me/972559647897" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-  </a>
-
+  <script src="js/money.js"></script>
+  <script src="js/hk-money-ai-extra.js"></script>
   <script>
-    // Sticky header shadow
-    const header = document.getElementById('site-header');
-    window.addEventListener('scroll', () => {
-      header.style.boxShadow = window.scrollY > 10
-        ? '0 4px 20px rgba(0,0,0,.12)'
-        : '0 2px 12px rgba(0,0,0,.06)';
+    /* FAQ accordion */
+    document.querySelectorAll('.ai-faq__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.ai-faq__item');
+        const isOpen = item.classList.contains('ai-faq__item--open');
+        // close all
+        document.querySelectorAll('.ai-faq__item--open').forEach(el => {
+          el.classList.remove('ai-faq__item--open');
+          el.querySelector('.ai-faq__icon').textContent = '+';
+          el.querySelector('.ai-faq__question').setAttribute('aria-expanded', 'false');
+        });
+        // open clicked if it was closed
+        if (!isOpen) {
+          item.classList.add('ai-faq__item--open');
+          btn.querySelector('.ai-faq__icon').textContent = '−';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
     });
-
-    // Mobile nav
-    const toggle = document.getElementById('nav-toggle');
-    const links  = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
   </script>
 </body>
 </html>
