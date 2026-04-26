@@ -127,10 +127,10 @@
 /* Sub-headline — white for contrast over the hero background */
 .mn-hero__sub {
   font-family: 'Karantina', sans-serif !important;
-  font-size: clamp(1.45rem, 2.4vw, 2rem) !important;
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem) !important;
   color: #fff !important;
-  line-height: 1.65 !important;
-  max-width: 600px !important;
+  line-height: 1.55 !important;
+  max-width: 640px !important;
   margin: 0 0 32px !important;
   font-weight: 400 !important;
   text-shadow: 0 1px 6px rgba(0,0,0,.35) !important;
@@ -1514,11 +1514,14 @@ body, .mn-nav__links a {
   .mn-hero__images    { display: none !important; }
   .mn-hero            { min-height: auto !important; padding-bottom: 40px; }
 
+  /* Hide building photo on mobile — too noisy behind text */
+  .mn-hero__bg-img    { display: none !important; }
+
   /* Headline: reduce size so it fits in 2 lines on mobile */
   .mn-hero__headline  { font-size: 2.1rem !important; }
 
-  /* Sub-headline: move up slightly closer to headline */
-  .mn-hero__sub       { margin-top: -6px !important; font-size: 1.3rem !important; }
+  /* Sub-headline: bigger on mobile */
+  .mn-hero__sub       { margin-top: -6px !important; font-size: 1.5rem !important; line-height: 1.5 !important; }
 
   /* Demo phone overlay — hide on mobile, only for desktop */
   .wa-bubble-overlay  { display: none; }
