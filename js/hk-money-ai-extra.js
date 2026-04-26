@@ -20,11 +20,12 @@
       var payload = {
         firstName:    nameParts[0] || '',
         lastName:     nameParts.slice(1).join(' ') || '',
-        name:         fullName,
+        full_name:    fullName,
         phone:        inputs[1] ? inputs[1].value : '',
         email:        inputs[2] ? inputs[2].value : '',
-        companyName:  inputs[3] ? inputs[3].value : '',
+        business_name: inputs[3] ? inputs[3].value : '',
         source:       'HK Money AI Landing Page',
+        form_id:      'website',
         tags:         ['hk-money-ai', 'landing-page']
       };
 
