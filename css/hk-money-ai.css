@@ -126,14 +126,15 @@
 
 /* Sub-headline — white for contrast over the hero background */
 .mn-hero__sub {
-  font-family: 'Karantina', sans-serif !important;
-  font-size: clamp(1.6rem, 2.8vw, 2.4rem) !important;
-  color: #fff !important;
-  line-height: 1.55 !important;
-  max-width: 640px !important;
+  font-family: 'Heebo', sans-serif !important;
+  font-size: clamp(.95rem, 1.4vw, 1.15rem) !important;
+  color: var(--navy) !important;
+  line-height: 1.7 !important;
+  max-width: 600px !important;
   margin: 0 0 32px !important;
   font-weight: 400 !important;
-  text-shadow: 0 1px 6px rgba(0,0,0,.35) !important;
+  text-shadow: none !important;
+  text-align: center !important;
 }
 
 /* Blue highlighted service names inside sub-headline */
