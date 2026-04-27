@@ -3,119 +3,256 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>מדיניות פרטיות | HK קבוצת חזות קריספין</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>מדיניות פרטיות – HK Money AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0c4068;
+      --blue: #39abe2;
+      --salmon: #e48375;
+      --white: #fff;
+      --light: #f4f8fc;
+      --muted: #666;
+    }
+    body {
+      font-family: 'Heebo', sans-serif;
+      background: var(--light);
+      color: #222;
+      line-height: 1.7;
+      direction: rtl;
+    }
+
+    /* Header */
+    .pv-header {
+      background: var(--navy);
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .pv-header__logo { height: 36px; width: auto; }
+    .pv-header__back {
+      font-family: 'Heebo', sans-serif;
+      font-size: .9rem;
+      color: rgba(255,255,255,.75);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .pv-header__back:hover { color: #fff; }
+
+    /* Hero band */
+    .pv-hero {
+      background: linear-gradient(135deg, #0c4068 0%, #1a6194 100%);
+      padding: 60px 32px 48px;
+      text-align: center;
+    }
+    .pv-hero__title {
+      font-family: 'Rubik', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .pv-hero__date {
+      font-size: .88rem;
+      color: rgba(255,255,255,.55);
+    }
+
+    /* Content */
+    .pv-content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .pv-intro {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 32px;
+      border-right: 4px solid var(--blue);
+      box-shadow: 0 2px 12px rgba(12,64,104,.06);
+      font-size: 1.05rem;
+      color: var(--navy);
+      font-weight: 500;
+    }
+    .pv-section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(12,64,104,.06);
+    }
+    .pv-section__num {
+      font-family: 'Rubik', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .pv-section__title {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .pv-section p {
+      font-size: .95rem;
+      color: #444;
+      margin-bottom: 12px;
+    }
+    .pv-section p:last-child { margin-bottom: 0; }
+    .pv-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pv-section ul li {
+      font-size: .95rem;
+      color: #444;
+      padding: 6px 0 6px 0;
+      border-bottom: 1px solid rgba(12,64,104,.06);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .pv-section ul li:last-child { border-bottom: none; }
+    .pv-section ul li::before {
+      content: '✓';
+      color: var(--blue);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .pv-contact-link {
+      color: var(--salmon);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .pv-contact-link:hover { text-decoration: underline; }
+    .pv-note {
+      font-size: .85rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    /* Footer */
+    .pv-footer {
+      background: var(--navy);
+      text-align: center;
+      padding: 24px;
+      font-size: .82rem;
+      color: rgba(255,255,255,.4);
+    }
+
+    @media (max-width: 600px) {
+      .pv-hero { padding: 40px 20px 32px; }
+      .pv-content { padding: 24px 16px 60px; }
+      .pv-section { padding: 22px 20px; }
+      .pv-intro { padding: 20px 20px; }
+    }
+  </style>
 </head>
 <body>
 
-  <header class="site-header" id="site-header">
-    <div class="container">
-      <nav class="nav">
-        <a href="index.html" class="nav__logo">
-          <span class="nav__logo-mark">HK</span>
-          <div class="nav__logo-text">
-            <span>קבוצת חזות קריספין</span>
-            <span>ייעוץ עסקי ופיננסי</span>
-          </div>
-        </a>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="index.html">ראשי</a></li>
-          <li><a href="strategic-business-consulting.html">ייעוץ עסקי</a></li>
-          <li><a href="hybrid-economic-flow-management.html">ניהול תזרים</a></li>
-          <li><a href="personal-financial-management.html">ניהול פיננסי אישי</a></li>
-          <li><a href="index.html#contact">צור קשר</a></li>
-          <li class="nav__cta"><a href="meeting.html" class="btn btn--primary">קביעת פגישה</a></li>
-        </ul>
-        <button class="nav__toggle" id="nav-toggle" aria-label="תפריט">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
-    </div>
+  <header class="pv-header">
+    <img src="assets/hkmoneylogo.png" alt="HK Money AI" class="pv-header__logo" />
+    <a href="index.html" class="pv-header__back">← חזרה לאתר</a>
   </header>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1 class="page-hero__title">מדיניות פרטיות</h1>
-      <p class="page-hero__sub">עדכון אחרון: דצמבר 2025</p>
+  <div class="pv-hero">
+    <h1 class="pv-hero__title">מדיניות פרטיות</h1>
+    <p class="pv-hero__date">עודכנה לאחרונה: 30.9.25</p>
+  </div>
+
+  <div class="pv-content">
+
+    <div class="pv-intro">
+      אנו ב-HK Money מכבדים את פרטיות המשתמשים שלנו ומתחייבים לשמור על המידע שלכם בצורה מאובטחת ושקופה.
     </div>
-  </section>
 
-  <section class="content-section">
-    <div class="container">
-      <div class="content-block">
-
-        <h2>כללי</h2>
-        <p>
-          HK קבוצת חזות קריספין ("החברה", "אנחנו") מכבדת את פרטיות המשתמשים באתר hak.co.il.
-          מדיניות פרטיות זו מסבירה כיצד אנו אוספים, משתמשים ומגנים על המידע האישי שלך.
-        </p>
-
-        <h2>איסוף מידע</h2>
-        <p>אנו עשויים לאסוף את סוגי המידע הבאים:</p>
-        <ul>
-          <li>שם מלא, כתובת דוא"ל ומספר טלפון – בעת מילוי טפסי יצירת קשר</li>
-          <li>מידע על העסק שלך – כאשר תבחר לשתף אותו</li>
-          <li>נתוני גלישה אנונימיים לצורכי אנליטיקה ושיפור חוויית המשתמש</li>
-        </ul>
-
-        <h2>שימוש במידע</h2>
-        <p>המידע שנאסף משמש אך ורק לצורך:</p>
-        <ul>
-          <li>מתן שירותי ייעוץ ומענה לפניות</li>
-          <li>תיאום פגישות וקשר שוטף עם לקוחות</li>
-          <li>שיפור השירותים והאתר</li>
-          <li>משלוח עדכונים ותכנים רלוונטיים – בהסכמה בלבד</li>
-        </ul>
-
-        <h2>אבטחת מידע</h2>
-        <p>
-          אנו נוקטים באמצעי אבטחה מתאימים להגנה על המידע האישי שלך מפני גישה בלתי מורשית,
-          שינוי, חשיפה או השמדה.
-        </p>
-
-        <h2>שיתוף מידע עם צדדים שלישיים</h2>
-        <p>
-          אנו לא מוכרים, סוחרים או מעבירים את המידע האישי שלך לגורמים חיצוניים,
-          למעט ספקי שירות המסייעים לנו בהפעלת האתר ובמתן שירותינו – בכפוף להסכמי סודיות.
-        </p>
-
-        <h2>זכויותיך</h2>
-        <ul>
-          <li>זכות לעיין במידע האישי המוחזק עליך</li>
-          <li>זכות לתקן מידע שגוי</li>
-          <li>זכות למחוק מידע אישי</li>
-          <li>זכות לבטל הסכמה לקבלת תכנים שיווקיים</li>
-        </ul>
-
-        <h2>יצירת קשר</h2>
-        <p>
-          לכל שאלה בנוגע למדיניות פרטיות זו, ניתן ליצור קשר בטלפון
-          <a href="tel:+972559647897" style="direction:ltr;display:inline-block;">055-964-7897</a>
-          או דרך <a href="index.html#contact">טופס יצירת הקשר</a> באתר.
-        </p>
-
-      </div>
+    <div class="pv-section">
+      <div class="pv-section__num">סעיף 1</div>
+      <h2 class="pv-section__title">איסוף מידע</h2>
+      <ul>
+        <li>מידע מחשבון Google (באמצעות OAuth): בעת התחברות באמצעות Google, אנו אוספים פרטי פרופיל בסיסיים בלבד</li>
+        <li>נתוני יומן (Calendar): אנו אוספים או ניגשים לנתוני יומן רק אם המשתמש העניק לכך הרשאה מפורשת</li>
+        <li>מידע שמוסר המשתמש באופן יזום: מספר טלפון או פרטים נוספים</li>
+        <li>מידע טכני מהמכשיר: סוג מכשיר, מערכת הפעלה, כתובת IP, נתוני שימוש, דוחות קריסה</li>
+        <li>מידע שימושי: פעולות שבוצעו באפליקציה, מועד שימוש ותדירות</li>
+      </ul>
     </div>
-  </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer__bottom" style="padding:24px 0;">
-        <span>© 2025 HK קבוצת חזות קריספין. כל הזכויות שמורות.</span>
-        <a href="privacy.html">מדיניות פרטיות</a>
-      </div>
+    <div class="pv-section">
+      <div class="pv-section__num">סעיף 2</div>
+      <h2 class="pv-section__title">שימוש במידע</h2>
+      <ul>
+        <li>זיהוי ואימות: זיהוי משתמשים וניהול ההתחברות באמצעות Google OAuth</li>
+        <li>תפעול השירות: מתן השירותים, הצגת מידע רלוונטי</li>
+        <li>שיפור חווית המשתמש: התאמה אישית, שיפור ושדרוג השירותים</li>
+        <li>תמיכה ועדכונים: מתן תמיכה טכנית ושליחת הודעות חשובות</li>
+      </ul>
     </div>
+
+    <div class="pv-section">
+      <div class="pv-section__num">סעיף 3</div>
+      <h2 class="pv-section__title">שיתוף מידע</h2>
+      <p>אנו מתחייבים כי איננו מוכרים את המידע האישי שלכם לצדדים שלישיים.</p>
+      <p>שיתוף מידע יתבצע אך ורק במקרים הבאים:</p>
+      <ul>
+        <li>אינטגרציה עם שירותי Google בהתאם להרשאות שניתנו</li>
+        <li>בהסכמה מפורשת של המשתמש</li>
+        <li>כנדרש על פי חוק או צו בית משפט</li>
+        <li>מידע אנונימי בלבד לצורכי ניתוח ושיפור</li>
+      </ul>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-section__num">סעיף 4</div>
+      <h2 class="pv-section__title">אבטחת מידע</h2>
+      <p>כל המידע מאוחסן בצורה מאובטחת בשרתים מוצפנים ובהתאם לתקני ההגנה המקובלים בתעשייה.</p>
+      <p class="pv-note">לא ניתן להבטיח הגנה הרמטית לחלוטין בסביבה מקוונת, אך אנו עושים כל שביכולתנו להגן על המידע שלכם.</p>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-section__num">סעיף 5</div>
+      <h2 class="pv-section__title">שמירת מידע</h2>
+      <p>המידע שנאסף נשמר אך ורק כל עוד הוא נדרש לצורך המטרות המפורטות במדיניות זו. עם סיום הצורך, המידע יימחק בצורה מאובטחת.</p>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-section__num">סעיף 6</div>
+      <h2 class="pv-section__title">זכויות המשתמש</h2>
+      <ul>
+        <li>לבקש לעיין במידע שנאסף עליו ולבקש תיקון של מידע שגוי</li>
+        <li>לבקש מחיקה מלאה של המידע האישי</li>
+        <li>לבטל הרשאות בכל עת</li>
+        <li>להתנגד לקבלת תכנים שיווקיים ישירים</li>
+      </ul>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-section__num">סעיף 7</div>
+      <h2 class="pv-section__title">יצירת קשר</h2>
+      <p>לכל שאלה בנוגע למדיניות פרטיות זו, ניתן לפנות אלינו בכתובת: <a href="mailto:info@hak.co.il" class="pv-contact-link">info@hak.co.il</a></p>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-section__num">סעיף 8</div>
+      <h2 class="pv-section__title">עדכונים במדיניות</h2>
+      <p>אנו שומרים לעצמנו את הזכות לעדכן מדיניות פרטיות זו מעת לעת. המשך השימוש בשירות לאחר פרסום שינויים מהווה הסכמה לשינויים אלו.</p>
+    </div>
+
+  </div>
+
+  <footer class="pv-footer">
+    © 2025 HK Money AI | חזות קריספין
   </footer>
 
-  <script>
-    const header = document.getElementById('site-header');
-    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
-    const toggle = document.getElementById('nav-toggle');
-    const links  = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
-  </script>
 </body>
 </html>
