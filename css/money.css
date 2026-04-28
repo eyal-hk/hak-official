@@ -327,7 +327,7 @@ ul { list-style: none; }
 /* ══════════════════════════════════════════
    FEATURES
 ══════════════════════════════════════════ */
-.mn-features { padding: 80px 0; background: var(--off); }
+.mn-features { padding: 80px 0; background: var(--white); }
 .mn-features__header { text-align: center; margin-bottom: 48px; }
 .mn-features__logo-inline {
   display: inline-flex; align-items: center; gap: 6px;

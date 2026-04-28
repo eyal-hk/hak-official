@@ -23,17 +23,9 @@
    HERO OVERRIDES
 ══════════════════════════════════════ */
 
-/* Natural sky gradient that blends with the building photo */
+/* Hero background — white beneath the building photo */
 .mn-hero {
-  background: linear-gradient(
-    180deg,
-    #6bb8e8 0%,
-    #8dcaed 20%,
-    #aad8f2 45%,
-    #c8e8f8 65%,
-    #dff0fb 85%,
-    #eef6fd 100%
-  ) !important;
+  background: #ffffff !important;
 }
 
 /* Building background — full cover, mirrored */
@@ -45,9 +37,9 @@
   top: auto !important;
   left: auto !important;
   object-fit: cover !important;
-  object-position: center 60% !important;
+  object-position: center 80% !important;
   transform: scaleX(-1) !important;
-  opacity: .35 !important;
+  opacity: .22 !important;
 }
 
 /* Reduce white fade — images overlap with building */
@@ -66,6 +58,10 @@
   margin-top: -200px !important;
   position: relative;
   z-index: 3;
+  pointer-events: none;
+}
+.mn-hero__images img {
+  pointer-events: auto;
 }
 
 /* Chat image — left side, visible above the fold */
@@ -112,22 +108,34 @@
 /* ── Hero headline: Karantina font (exact Figma spec) ── */
 .mn-hero__headline {
   font-family: 'Karantina', sans-serif !important;
-  font-size: clamp(2.8rem, 7vw, 8.75rem) !important;
+  font-size: clamp(2.2rem, 4.8vw, 6rem) !important;
   font-weight: 400 !important;
-  line-height: 0.95 !important;
+  line-height: 1.05 !important;
   color: var(--navy) !important;
   letter-spacing: -0.01em !important;
   margin-bottom: 24px !important;
+}
+
+/* Logo block */
+.mn-hero__logo-block {
+  margin-bottom: clamp(12px, 1.8vw, 28px) !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.mn-hero__logo-block .mn-hero__logo-img {
+  height: clamp(60px, 8vw, 110px) !important;
+  width: auto !important;
 }
 .mn-hero__accent {
   color: var(--salmon) !important;
   font-family: 'Karantina', sans-serif !important;
 }
 
-/* Sub-headline — white for contrast over the hero background */
+
+/* Sub-headline */
 .mn-hero__sub {
-  font-family: 'Heebo', sans-serif !important;
-  font-size: clamp(.95rem, 1.4vw, 1.15rem) !important;
+  font-family: 'Karantina', sans-serif !important;
+  font-size: clamp(1rem, 1.5vw, 1.2rem) !important;
   color: var(--navy) !important;
   line-height: 1.7 !important;
   max-width: 600px !important;
@@ -144,8 +152,10 @@
   text-shadow: none;
 }
 
-/* CTA — clear separation from sub */
+/* CTA — above images layer */
 .mn-hero__cta {
+  position: relative;
+  z-index: 5 !important;
   display: inline-block;
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
@@ -187,28 +197,61 @@ body, .mn-nav__links a {
    PROBLEM SECTION
 ══════════════════════════════════════ */
 .ai-problem {
-  padding: 56px 0;
+  padding: 64px 0 72px;
   background: var(--white);
 }
-.ai-problem__inner {
+.ai-problem__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.ai-problem__list {
   display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 64px;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-bottom: 48px;
+  border-top: 2px solid var(--border);
 }
-.ai-problem__text p {
-  font-size: 1.05rem;
+.ai-problem__item {
+  padding: 32px 28px;
+  border-left: 1px solid var(--border);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.ai-problem__item:last-child { border-left: none; }
+.ai-problem__item-num {
+  font-family: 'Karantina', sans-serif;
+  font-size: 2.2rem;
+  color: var(--salmon);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.ai-problem__item-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.ai-problem__item-sub {
+  font-size: .92rem;
   color: var(--muted);
-  line-height: 1.85;
-  margin-bottom: 16px;
+  line-height: 1.7;
 }
-.ai-problem__text p strong { color: var(--navy); }
 .ai-problem__stats {
   display: flex;
-  flex-direction: column;
   gap: 24px;
+  margin-bottom: 40px;
 }
 .ai-problem__stat {
+  flex: 1;
+  background: var(--off);
+  border-radius: 16px;
+  padding: 28px 24px;
+  border-right: 4px solid var(--salmon);
+}
+.ai-problem__stats .ai-problem__stat {
+  flex: 1;
   background: var(--off);
   border-radius: 16px;
   padding: 28px 24px;
@@ -222,11 +265,28 @@ body, .mn-nav__links a {
   line-height: 1;
   margin-bottom: 8px;
 }
+.ai-problem__stats .ai-problem__num {
+  display: block;
+  font-family: 'Karantina', sans-serif;
+  font-size: 2.8rem;
+  color: var(--salmon);
+  line-height: 1;
+  margin-bottom: 8px;
+}
 .ai-problem__label {
   font-size: .88rem;
   color: var(--navy);
   line-height: 1.6;
   font-weight: 500;
+}
+.ai-problem__stats .ai-problem__label {
+  font-size: .88rem;
+  color: var(--navy);
+  line-height: 1.6;
+  font-weight: 500;
+}
+.ai-problem__cta {
+  text-align: center;
 }
 
 /* ══════════════════════════════════════
